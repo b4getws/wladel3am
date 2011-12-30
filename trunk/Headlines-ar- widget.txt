@@ -72,7 +72,11 @@ function RecentPostsScrollerv2(json)
     				}
     			}
 			   sHeadLines = sHeadLines + "\<b\>"+sBulletChar+"\</b\> \<a " + sPostLinkLocation + " href=\"" + sPostURL + "\">"  + objPost.title.$t + "\</a\>" + sHeadlineTerminator;
-
+			}
+			sPoweredBy = "Powered By \<a tareget =\"_blank\" href=\"http://clwolvi.blogspot.com/2008/10/display-posts-as-headlines-blogger.html\"\>Wolverine Hacks\</a\> and Translated By \<a tareget =\"_blank\" href=\"http://italib.blogspot.com\"\>œ—Ê” «·ÿ«·»\</a\>"; 
+			
+			if(sDirection == "left")
+			{
 				//
 				sHeadLines = sHeadLines + "&nbsp;";
 			}

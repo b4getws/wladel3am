@@ -47,6 +47,6 @@ r = 0;
 i++;
 }
 document.write('</ul>');
-document.write('<a rel="dofollow" href="http://widgetsforfree.blogspot.com/2009/01/related-posts-widget-for-blogger.html"></a></font>');
+document.write('<a rel="nofollow" href="http://widgetsforfree.blogspot.com/2009/01/related-posts-widget-for-blogger.html"></a></font>');
 }
 //]]>

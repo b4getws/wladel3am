@@ -1,0 +1,63 @@
+body {
+	font-family: Trebuchet MS, Verdana, Arial;
+	font-size: 12px;
+	background-color: #F8F8F8;
+	width: 600px;
+	margin: 40px auto 20px auto;
+}
+form {
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 8px;
+	border: 1px solid #999999;
+}
+h1 {
+	font-size: 24px;
+	margin: 0px 0px 6px 0px;
+}
+.input, .button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 2px;
+}
+.input {
+	font-size: 18px;
+	width: 396px;
+}
+.button {
+	font-size: 18px;
+	margin: 4px 0px 0px 0px;
+	cursor: pointer;
+}
+label {
+	font-size: 14px;
+	cursor: pointer;
+}
+#loading {
+	display: none;
+	margin: 6px 0px 0px 2px;
+}
+#results {
+	display: none;
+	margin: 8px 0px 0px 2px;
+}
+table, tr, td {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+.left, .right {
+	padding: 4px;
+}
+.left {
+	font-size: 14px;
+	font-weight: bold;
+	width: 200px;
+	background-color: #EEEEEE;
+}
+.right {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: #222222;
+	width: 400px;
+}

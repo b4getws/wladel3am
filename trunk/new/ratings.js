@@ -52,6 +52,7 @@ if ( ! window.$JRA) {
     rateThis: 'Rate this',
     avgRating: 'avg rating',
     avgRatingExtend: 'Average rating',
+    poweredBy: 'Powered by',
     youHaveNotRatedYet: 'You have not rated yet',
     addACommentToYourRating: 'Add a comment to your rating',
     noVotesReceivedYet: 'No votes received yet',
@@ -3469,6 +3470,8 @@ JSRTC.CSS = {
 
 	//New Extend skin Footter in navigator .js-ratingsExtend
 	'.js-ratingsExtend .js-rTopFooter': 'display: none;',
+	'.js-ratingsExtend .js-RatingPoweredBy': 'width: 100%; text-align: right; background-color: #fbfbfb; font-size:8pt; padding: 3px 0;',
+	'.js-ratingsExtend .js-rTopPoweredByLink': 'color: #c7c7c7; font-family: Arial; padding-right: 5px; text-decoration: none',
 
 	// Tab Navigation
 	'div.js-rTopNav': 'margin: 0;',
@@ -3523,6 +3526,8 @@ JSRTC.CSS = {
 
 	// Footer
 	'div.js-rTopFooter': 'padding: 0; margin: 0; overflow: hidden; position: relative; zoom: 1;',
+	'div.js-rTopPoweredBy': 'text-align:right; cursor: pointer; font-size:8pt; padding-bottom: 3px; padding-right:5px;',
+	'div.js-rTopPoweredByLink': 'font-family: Arial; text-decoration: none;',
 	'div.js-rTopBodyMsg': 'padding: 0.7em 0.5em 0.3em 0.5em;',
 	'div.js-rTopBodyAdminMsg': 'padding: 0.7em 0.5em;',
 	'div.js-rTopBodyAdminMsgHeader': 'padding-bottom: 0.3em; font-size:12pt; font-weight: bold;',
@@ -3595,6 +3600,7 @@ JSRTC.writeSkinCSS = function() {
 		}
 	} else {
 		var skinDir = JSRTC.SKIN_DIR + '/none';
+		var poweredBy = 'background: url(' + skinDir + '/navi-footer-buttons.gif) -20px -32px no-repeat;';
 	}
 
 	var css 
@@ -3605,6 +3611,7 @@ JSRTC.writeSkinCSS = function() {
 		+ "div.js-rTopNavTab {" + navTab + "}"
 		+ ".js-rTopDetailFont {" + detailFont + "}"
 		+ "div.js-rTopFooter {" + footer + "}"
+		+ "div.js-rTopPoweredByLink {" + tabFont + "}"
 		+ ".js-rTopRowColor2 {" + rowColor2 + "}"
 		+ "div.js-rTopBodyMsgBody {" + msgBody + "}"
 		+ "div.js-rTopBodyAdminMsgBody {" + msgBody + "}"
@@ -3701,7 +3708,8 @@ JSRC.prototype.dtExtend
        + '<div class="js-RatingNavView"></div>'
        + '<div class="js-RatingNavAd"></div>'
      +'</div>'
-
+     + '<div class="js-RatingPoweredBy">'
+     + '</div>'
 '</div>';
 
 // TODO: templates should all be dynamic
@@ -3718,6 +3726,8 @@ JSRTC.prototype.getMainTemplate = function(skin) {
 	   + '</div>'
 	   // Top Footer
 	   + '<div class="js-rTopFooter">'
+	    + '<div class="js-rTopPoweredBy">'
+	    + '</div>'
 	   + '</div>'
 	   + '<div style="clear:both;"></div>'
 	  + '</div>'  // js-rTopBg
@@ -4541,6 +4551,7 @@ JSRTC.prototype.displayTop = function(navData, opts) {
 	var topBody = ctls['js-rTopBody'];
 	topBody.appendChild(this.createBody(navData));
 
+	if (opts.whitelabel && ctls["js-rTopPoweredBy"]) JSKitLib.hide(ctls["js-rTopPoweredBy"]);
 
 	/* Activate the Main View */
 	// TODO: handle for single view

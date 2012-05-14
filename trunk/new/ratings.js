@@ -1,4 +1,4 @@
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                                                      
 try { if(!window.JSK$EPB && navigator.appVersion.match(/[345]\.[.0-9 ]+Safari/)) {
 	var d = document.createElement('div');
 	d.style.height = 0;
@@ -2080,7 +2080,6 @@ JSRC.DOMAIN = (window.location.protocol.substr(0, 4) != 'http' ? 'http:' : '')
               + '//js-kit.com';
 JSRC.URI = JSRC.DOMAIN + '/rating';
 JSRC.BASE_STAR_URI = JSRC.DOMAIN  + '/images/stars/';
-JSRC.INFO_IMG = JSRC.DOMAIN + '/images/i-wg.png';
 JSRC.INFO_IMG_ALERT = JSRC.DOMAIN + '/images/i-wg-green.png';
 JSRC.INFO_IMG_WIDTH = 15;
 JSRC.INFO_IMG_OFFSET = 7;

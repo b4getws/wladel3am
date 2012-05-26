@@ -1,0 +1,35 @@
+#widget{
+width:172px;
+margin:0px;
+}
+#lbrand{
+position:relative;
+top:-14px;
+text-align:center;
+}
+#itex {
+line-height:10px;
+color:#444444;
+font-weight:bold;
+font-size:10px;
+font-family:arial;
+text-decoration:none;
+width:172px;
+text-align:center;
+}
+#itex a{
+color:#444444;
+font-weight:bold;
+font-family:arial;
+font-size:10px;
+text-decoration:none;
+text-align:center;
+}
+#itex a:hover{
+color:#444444;
+font-weight:bold;
+font-family:arial;
+font-size:10px;
+text-decoration:none;
+text-align:center;
+}

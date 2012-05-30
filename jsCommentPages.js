@@ -23,7 +23,7 @@ var jsCommentPages = function(){
 			getTweetCounts();
 			
 			var $default = $(".js-default-tab:first"),
-				strDefault = "#blogger-comments";
+				strDefault = "#fb-comments";
 			if($default.length > 0){
 				strDefault = "#" + $default.attr("id");
 			}

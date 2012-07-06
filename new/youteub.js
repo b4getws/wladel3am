@@ -9,10 +9,6 @@
     var oetagname = "video"; // [video=zzz], maybe you like "embed" or "youtube" more?
     var oelazy = -1; // -1 detect, 0 = normal, 1 = lazy (needs lazy load hack)
     //
-// Usage:
-// <a class="youtube-lazy-link" style="width:560px;height:315px;" href="http://www.youtube.com/watch?v=3u8sEaohHMk">Sibelius</a>
-//  - style is optional, if omitted, default width 560 and height 315 pixels is used
-//
     function oe_loadscript(filename) {
       var scr=document.createElement('script');
       scr.setAttribute("type","text/javascript");

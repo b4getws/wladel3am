@@ -52,7 +52,7 @@
     }
     function oembed_yt(url, width, callID) {
       src = "http://oembed-js.appspot.com/?url=" + encodeURIComponent(url) + "&callback=oembed_callback&callID=" + encodeURIComponent(callID);
-      if(width) src = src + "&maxwidth=" + width + "315pxheight=" + width;
+      if(width) src = src + "&maxwidth=" + width + "&maxheight=" + width;
       oe_loadscript(src);
     }
     $(document).ready(function() {
@@ -79,5 +79,5 @@
           }
         }
       });
-     }, 500);
+     }, 300);
     });

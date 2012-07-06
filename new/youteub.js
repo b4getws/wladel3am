@@ -1,5 +1,4 @@
-﻿    <script type='text/javascript'>
-    //<![CDATA[
+﻿    //<![CDATA[
     // if oetag=0, just use video urls like:
     //           http://www.youtube.com/watch?v=12345678901
     //           surrounded by white space (video tag can be used, too)
@@ -80,7 +79,5 @@
           }
         }
       });
-     }, 500);
+     }, 300);
     });
-    //]]>
-    </script>

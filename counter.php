@@ -24,7 +24,7 @@ PRIMARY KEY ( `SN` )
 			$username = "YOUR-USERNAME"; // Enter Your Username and Password Here
 			$password = 'YOUR-PASSWORD'; // Enter Your Username and Password Here
 			$database = 'YOUR-COUNTER-DATABASE';  //Enter Your Database Name Here
-			$table = "YOUR-COUNTER-TABLE"; //Enter Your Counter Table Name Here
+			$table = "counter"; //Enter Your Counter Table Name Here
 			
 			
 			$link = mysql_connect('localhost', $username, $password); 

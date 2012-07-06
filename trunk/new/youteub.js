@@ -1,4 +1,5 @@
-﻿    <script type='text/javascript'>
+﻿   <script src='http://code.jquery.com/jquery-latest.js' type='text/javascript'></script>
+    <script type='text/javascript'>
     //<![CDATA[
     // if oetag=0, just use video urls like:
     //           http://www.youtube.com/watch?v=12345678901

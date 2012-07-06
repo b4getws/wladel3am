@@ -35,7 +35,7 @@
         ee.attr("style", "vertical-align:top;");
         htm = $("<div/>").append(ee).html();
         htm = $('<div/>').text(htm).html().replace(/"/g,'&quot;');
-        resp.html = '<a href="'+resp.url+'" class="youtube-lazy-link" style="width: '+w+'px; height: '250'px; background: #000 url('+resp.thumbnail_url+') center center no-repeat;" onclick="$(this).replaceWith(\''+htm+'\');return false;"><div style="width:'+(w-4)+'px;height:'+(h-4)+'px;" class="youtube-lazy-link-div"></div><div class="youtube-lazy-link-info"><b>'+resp.title+(resp.playlist ? '</b> [playlist]' : '</b>')+'<br /><small>by '+resp.author_name+'</small></div></a>';
+        resp.html = '<a href="'+resp.url+'" class="youtube-lazy-link" style="width: '+w+'px; height: '+h+'px; background: #000 url('+resp.thumbnail_url+') center center no-repeat;" onclick="$(this).replaceWith(\''+htm+'\');return false;"><div style="width:'+(w-4)+'px;height:'+(h-4)+'px;" class="youtube-lazy-link-div"></div><div class="youtube-lazy-link-info"><b>'+resp.title+(resp.playlist ? '</b> [playlist]' : '</b>')+'<br /><small>by '+resp.author_name+'</small></div></a>';
       }
       htmlx = html.replace("[" + oetagname + "="+resp.url+"]", " " + resp.url + " ");
       htmlx = htmlx.replace("[" + oetagname + "="+resp.url+" ]", " " + resp.url + " ");
@@ -52,7 +52,7 @@
     }
     function oembed_yt(url, width, callID) {
       src = "http://oembed-js.appspot.com/?url=" + encodeURIComponent(url) + "&callback=oembed_callback&callID=" + encodeURIComponent(callID);
-      if(width) src = src + "&maxwidth=" + width + "&maxheight=" + width;
+      if(width) src = src + "&maxwidth=" + width + "315pxheight=" + width;
       oe_loadscript(src);
     }
     $(document).ready(function() {

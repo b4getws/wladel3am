@@ -34,3 +34,7 @@ document.onmouseup=reEnable
 }
 }
 window.onload=noSelect;
+
+
+document.write("");
+document.write("</div>");

@@ -1379,7 +1379,7 @@ function checkLinks() {
         DOMAssistant.$("body a").each(function () {        
             if (in_object(domains_include, DOMAssistant.$(this).href)) {
                 if (DOMAssistant.$(this).href.toLowerCase().indexOf(domain_url) != 7) {
-                    url = "http://wladel3am.googlecode.com/svn/trunk/jquery/bookmarks.html?url=http://"+ domain_url +DOMAssistant.$(this).href;
+                    url = "http://wladel3am.googlecode.com/svn/trunk/jquery/bookmarks.html?url=http://"+ domain_url +"/search/?label="+DOMAssistant.$(this).href;
                     DOMAssistant.$(this).setAttributes({href : url});
                 }                
             }
@@ -1390,7 +1390,7 @@ function checkLinks() {
         DOMAssistant.$("body a").each(function () {      
             if (!in_object(domains_exclude, DOMAssistant.$(this).href) && DOMAssistant.$(this).href.substr(0,10) != "javascript") {                        
                 if (DOMAssistant.$(this).href.toLowerCase().indexOf(domain_url) != 7) {
-                    url = "http://wladel3am.googlecode.com/svn/trunk/jquery/bookmarks.html?url=http://"+ domain_url +DOMAssistant.$(this).href;
+                    url = "http://wladel3am.googlecode.com/svn/trunk/jquery/bookmarks.html?url=http://"+ domain_url +"/search/?label="+DOMAssistant.$(this).href;
                     DOMAssistant.$(this).setAttributes({href : url});                    
                 }
             }

@@ -1,0 +1,22 @@
+﻿<p align='center'><b><font color='#FFFFFF'>The Link Will Appear In 20 
+second</font></b></p>
+<p align='center'><b><span lang='ar-eg'><font color='#FFFFFF'>سوف يظهر الرابط بعد 20 ثانية</font></span></b></p>
+<p align='center'>
+<img border='0' height='70' src='http://4.bp.blogspot.com/-s4BIv4ZNtoE/Tl_FKp0t5UI/AAAAAAAAAE0/2Vyg5miNNME/s1600/download_01.gif' width='149'/></p>
+<p align="center">
+<span id="waiting_getlink">&nbsp;</span>
+<script type="text/javascript">
+<!--
+        function getlink(secs){
+   secs--;
+   if(secs>0){
+    document.getElementById("waiting_getlink").innerHTML = 'Please Wait ...' + secs
+    window.setTimeout("getlink("+secs+");",1000);
+   } else {
+    document.getElementById("waiting_getlink").innerHTML = '<a  target="_blank" href="DOMAssistant.$(this).href" title="Click Here To Go Get The File"><font color="#ffffff"><span style="font-size:8pt;"><b>Click Here To Get The File</b></span></font></a>';          
+   }
+  }
+getlink(20); 
+// -->
+</script>
+</p>
